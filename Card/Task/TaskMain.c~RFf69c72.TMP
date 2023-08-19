@@ -1,0 +1,543 @@
+// -------------------------------------------------------------------------
+// Task :: Main Handler
+// Developed by Soren Afzar Co. (www.sorenafzar.ir)
+// Version : August 2021
+// -------------------------------------------------------------------------
+// -------------------------------------------------------------------------
+#include "TaskMain.h"
+#include "delay.h"
+#include "gpio.h"
+#include "adc.h"
+#include "board.h"
+#include "led.h"
+#include "rng.h"
+#include "Audio.h"
+#include "RGB.h"
+#include "RTCC.h"
+#include "AD.h"
+#include "Memory.h"
+#include "General_Config.h"
+#include <stdio.h>
+#include <string.h>
+
+#include "../SampleData_Pressure.h"
+#include "../SampleData_Proximity.h"
+#include "../SampleData_Vibrtion.h"
+// -------------------------------------------------------------------------
+// -------------------------------------------------------------------------
+//#define TEST_TIMING
+// -------------------------------------------------------------------------
+#define RPM_CALC_TIM					TIM5
+#define RPM_CALC_TIM_CLOCK_ENABLE()		__HAL_RCC_TIM5_CLK_ENABLE()
+#define RPM_CALC_TIM_CLOCK_DISABLE()	__HAL_RCC_TIM5_CLK_DISABLE()
+#define RPM_CALC_TIM_RESET()			__HAL_RCC_TIM5_FORCE_RESET();__HAL_RCC_TIM5_RELEASE_RESET()
+
+#define DATA_SAMPLE_TIM					TIM2
+#define DATA_SAMPLE_TIM_IRQ				TIM2_IRQn
+#define DATA_SAMPLE_TIM_HANDLER			TIM2_IRQHandler
+#define DATA_SAMPLE_TIM_CLOCK_ENABLE()	__HAL_RCC_TIM2_CLK_ENABLE()
+#define DATA_SAMPLE_TIM_CLOCK_DISABLE()	__HAL_RCC_TIM2_CLK_DISABLE()
+#define DATA_SAMPLE_TIM_RESET()			__HAL_RCC_TIM2_FORCE_RESET();__HAL_RCC_TIM2_RELEASE_RESET()
+
+#define DATA_OVER_SAMPLE_COUNT			1
+// -------------------------------------------------------------------------
+// -------------------------------------------------------------------------
+Gpio_t GlobalSync;
+Adc_t adcVoltageInput;
+Led_t LedAlive;
+Gpio_t Relay_IPC;
+// -------------------------------------------------------------------------
+Gpio_t Sensor_Trigger;
+bool Sensor_TrigIsHappen = false;
+bool Sensor_TrigIsAvailable = false;
+uint32_t LastTime_TrigReceived = 0;
+uint32_t Sensor_TriggerDuration;
+TIM_HandleTypeDef RpmTimer_Handle;
+TIM_HandleTypeDef SampleTimer_Handle;
+volatile uint32_t Sensor_SampleCounter = 0;
+volatile bool SensorSamplingIsTrigged = false;
+volatile bool SensorSamplingIsDone = false;
+SensorStatus_t Sensor_Status[SENSOR_COUNT] = { SensorStatus_Disabled };
+uint16_t Sensor_RawValue[SENSOR_COUNT] = { 0 };
+uint16_t Sensor_DataSampleBuffer[SENSOR_COUNT][DATA_COUNT_BUFFER];
+bool Error_Available = false;
+uint32_t startAcq, durationAcq, durationSend;
+// -------------------------------------------------------------------------
+static void Main_Task(void* argument);
+// -------------------------------------------------------------------------
+extern vGlobal* pMainVariables;
+extern xQueueHandle qMessageHandlerCom;
+xQueueHandle qMessageHandlerMain;
+MessageType_t msgMain;
+// -------------------------------------------------------------------------
+void Main_TaskInit(void)
+{
+	xTaskCreate(Main_Task, "MainTask", MAIN_TASK_STACK_SIZE, NULL, MAIN_TASK_PRIORITY, NULL);
+	qMessageHandlerMain = xQueueGenericCreate(1, sizeof(msgMain), 0);
+}
+// -------------------------------------------------------------------------
+void RPM_CALC_TIM_HANDLER(void)
+{
+	Sensor_TrigIsHappen = false;
+}
+// -------------------------------------------------------------------------
+bool RpmCalculator_Init()
+{
+	TIM_ClockConfigTypeDef sClockSourceConfig = { 0 };
+	TIM_SlaveConfigTypeDef sSlaveConfig = { 0 };
+	TIM_MasterConfigTypeDef sMasterConfig = { 0 };
+
+	RPM_CALC_TIM_RESET();
+	RPM_CALC_TIM->CNT = 0;
+	RPM_CALC_TIM_CLOCK_ENABLE();
+	RpmTimer_Handle.Instance = RPM_CALC_TIM;
+	RpmTimer_Handle.Init.Prescaler = 0;
+	RpmTimer_Handle.Init.CounterMode = TIM_COUNTERMODE_UP;
+	RpmTimer_Handle.Init.Period = 0xFFFFFFFF;
+	RpmTimer_Handle.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+	RpmTimer_Handle.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+	if (HAL_TIM_Base_Init(&RpmTimer_Handle) != HAL_OK)
+	{
+		return false;
+	}
+	sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+	if (HAL_TIM_ConfigClockSource(&RpmTimer_Handle, &sClockSourceConfig) != HAL_OK)
+	{
+		return false;
+	}
+	sSlaveConfig.SlaveMode = TIM_SLAVEMODE_DISABLE;
+	if (HAL_TIM_SlaveConfigSynchro(&RpmTimer_Handle, &sSlaveConfig) != HAL_OK)
+	{
+		return false;
+	}
+	sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+	sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+	if (HAL_TIMEx_MasterConfigSynchronization(&RpmTimer_Handle, &sMasterConfig) != HAL_OK)
+	{
+		return false;
+	}
+	if (HAL_TIM_Base_Start(&RpmTimer_Handle) != HAL_OK)
+	{
+		return false;
+	}
+	//HAL_NVIC_SetPriority(RPM_CALC_TIM_IRQ, 0x0b, 0);
+	//HAL_NVIC_EnableIRQ(RPM_CALC_TIM_IRQ);
+	return true;
+}
+// -------------------------------------------------------------------------
+void RpmCalculator_ResetCounter()
+{
+	RPM_CALC_TIM->CNT = 0;
+}
+// -------------------------------------------------------------------------
+uint32_t RpmCalculator_GetCounter()
+{
+	return RPM_CALC_TIM->CNT;
+}
+// -------------------------------------------------------------------------
+void SensorTriggerInterrupt_Handler(void* context)
+{
+	Sensor_TriggerDuration = RpmCalculator_GetCounter();
+	RpmCalculator_ResetCounter();
+	Sensor_TrigIsHappen = true;
+	Sensor_TrigIsAvailable = true;
+	LastTime_TrigReceived = HAL_GetTick();
+}
+// -------------------------------------------------------------------------
+bool SensorTrigger_IsRun()
+{
+	if (Sensor_TrigIsHappen == false)
+	{
+		return false;
+	}
+	if (Sensor_TriggerDuration < DATA_SAMPLES_PER_ROUND || Sensor_TriggerDuration >= 0xFFFFFFFF - 2)
+	{
+		return false;
+	}
+	return true;
+}
+// -------------------------------------------------------------------------
+void Sensor_CheckStatus(uint8_t select, uint32_t value, bool rgb)
+{
+	if (value < pMainVariables->Sensors[select].Margin.Short)
+	{
+		Sensor_Status[select] = SensorStatus_Error_ShortCircuit;
+	}
+	else if (value < pMainVariables->Sensors[select].Margin.Break)
+	{
+		Sensor_Status[select] = SensorStatus_Error_BreakIn;
+	}
+	else if (value < pMainVariables->Sensors[select].Margin.LimitLow)
+	{
+		Sensor_Status[select] = SensorStatus_Error_UnderRange;
+	}
+	else if (value > pMainVariables->Sensors[select].Margin.LimitHigh)
+	{
+		Sensor_Status[select] = SensorStatus_Error_OverRange;
+	}
+	else
+	{
+		Sensor_Status[select] = SensorStatus_Connected;
+	}
+	if (rgb)
+	{
+		if (Sensor_Status[select] & SensorStatus_Connected)
+		{
+			RGB_SetColor_ByIndex(select + RGB_STATUS_SENSOR_START, RGB_COLOR_GREEN);
+		}
+		else if (Sensor_Status[select] == SensorStatus_Disabled)
+		{
+			RGB_SetColor_ByIndex(select + RGB_STATUS_SENSOR_START, RGB_COLOR_OFF);
+		}
+		else if (Sensor_Status[select] & SensorStatus_Warning_NotConfigured)
+		{
+			Error_Available = true;
+			RGB_SetColor_ByIndex(select + RGB_STATUS_SENSOR_START, RGB_COLOR_ORANGE);
+		}
+		else if (Sensor_Status[select] & SensorStatus_Error_UnderRange)
+		{
+			Error_Available = true;
+			RGB_SetColor_ByIndex(select + RGB_STATUS_SENSOR_START, RGB_COLOR_AQUA);
+		}
+		else if (Sensor_Status[select] & SensorStatus_Error_OverRange)
+		{
+			Error_Available = true;
+			RGB_SetColor_ByIndex(select + RGB_STATUS_SENSOR_START, RGB_COLOR_YELLOW);
+		}
+		else if (Sensor_Status[select] & SensorStatus_Error_BreakIn)
+		{
+			Error_Available = true;
+			RGB_SetColor_ByIndex(select + RGB_STATUS_SENSOR_START, RGB_COLOR_BLUE);
+		}
+		else if (Sensor_Status[select] & SensorStatus_Error_ShortCircuit)
+		{
+			Error_Available = true;
+			RGB_SetColor_ByIndex(select + RGB_STATUS_SENSOR_START, RGB_COLOR_MAGENTA);
+		}
+		else if (Sensor_Status[select] & SensorStatus_Error_Unknown)
+		{
+			Error_Available = true;
+			RGB_SetColor_ByIndex(select + RGB_STATUS_SENSOR_START, RGB_COLOR_RED);
+		}
+	}
+}
+// -------------------------------------------------------------------------
+void DATA_SAMPLE_TIM_HANDLER()
+{
+	HAL_TIM_IRQHandler(&SampleTimer_Handle);
+	SensorSamplingIsTrigged = true;
+}
+// -------------------------------------------------------------------------
+bool SamplingSetup(uint32_t interval)
+{
+	SensorSamplingIsDone = false;
+	Sensor_SampleCounter = 0;
+	TIM_ClockConfigTypeDef sClockSourceConfig = { 0 };
+	TIM_SlaveConfigTypeDef sSlaveConfig = { 0 };
+	TIM_MasterConfigTypeDef sMasterConfig = { 0 };
+
+	DATA_SAMPLE_TIM_RESET();
+	DATA_SAMPLE_TIM_CLOCK_ENABLE();
+	SampleTimer_Handle.Instance = DATA_SAMPLE_TIM;
+	SampleTimer_Handle.Init.Prescaler = 0;
+	SampleTimer_Handle.Init.CounterMode = TIM_COUNTERMODE_UP;
+	SampleTimer_Handle.Init.Period = interval;
+	SampleTimer_Handle.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+	SampleTimer_Handle.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+	if (HAL_TIM_Base_Init(&SampleTimer_Handle) != HAL_OK)
+	{
+		return false;
+	}
+	sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+	if (HAL_TIM_ConfigClockSource(&SampleTimer_Handle, &sClockSourceConfig) != HAL_OK)
+	{
+		return false;
+	}
+	HAL_NVIC_SetPriority(DATA_SAMPLE_TIM_IRQ, 0, 0);
+	HAL_NVIC_EnableIRQ(DATA_SAMPLE_TIM_IRQ);
+	if (HAL_TIM_Base_Start_IT(&SampleTimer_Handle) != HAL_OK)
+	{
+		return false;
+	}
+	return true;
+}
+// -------------------------------------------------------------------------
+bool SamplingRun(uint32_t maxSample)
+{
+	while (SensorSamplingIsTrigged == false) ;
+	SensorSamplingIsTrigged = false;
+	uint16_t valRead = 0;
+	uint8_t iStep = DATA_SAMPLES_PER_ROUND / maxSample;
+	if (iStep == 0) 
+	{
+		iStep = 1;
+	}
+	for (uint8_t s = 0; s < SENSOR_COUNT; ++s)
+	{
+		AD_StartAquisition(s);
+		//for (uint32_t d = 0; d < 1; ++d);
+		CRITICAL_SECTION_BEGIN();
+		bool bRead = AD_ReadSpi(s, &valRead);
+		CRITICAL_SECTION_END();
+		if (bRead)
+		{
+			for (uint8_t i = 0; i < iStep; ++i)
+			{
+				pMainVariables->Sensors[s].DataBuffer[Sensor_SampleCounter * iStep + i] = valRead;
+			}
+		}
+		AD_StopAquisition(s);
+		Sensor_CheckStatus(s, pMainVariables->Sensors[s].DataBuffer[Sensor_SampleCounter * iStep], false);
+	}
+
+	Sensor_SampleCounter++;
+	if (Sensor_SampleCounter >= maxSample)
+	{
+		HAL_TIM_Base_Stop(&SampleTimer_Handle);
+		DATA_SAMPLE_TIM_CLOCK_DISABLE();
+		SensorSamplingIsDone = true;
+	}
+	return SensorSamplingIsDone;
+}
+// -------------------------------------------------------------------------
+void GlobalSyncInterrupt_Handler(void* context)
+{
+
+}
+// -------------------------------------------------------------------------
+static void Main_Task(void* argument)
+{
+#ifdef TEST_TIMING
+	AD_Init(AD_SAMPLING_FREUENCY);
+	RpmCalculator_Init();
+	uint32_t iSampleCount = DATA_SAMPLES_PER_ROUND / DATA_SAMPLE_SCALE;
+	while (1)
+	{
+		pMainVariables->Sensors[0].Interval = ((Sensor_TriggerDuration / DATA_SAMPLES_PER_ROUND) * 1000) / (HAL_RCC_GetHCLKFreq() / 1000000);
+		RpmCalculator_ResetCounter();
+		//DelayMs(100);
+		Sensor_TriggerDuration = 14382000; // RpmCalculator_GetCounter();
+		SamplingSetup(Sensor_TriggerDuration / iSampleCount);
+		startAcq = HAL_GetTick();
+		while (SamplingRun(iSampleCount) == false)
+		{
+		}
+		SensorSamplingIsDone = true;
+		Sensor_TrigIsHappen = false;
+		durationAcq = HAL_GetTick() - startAcq;
+		if (durationAcq > 60 || durationAcq < 59)
+		{
+			bool wait = true;
+		}
+	}
+#endif
+	
+#pragma region INITIALIZE
+	RGB_Init();
+	Audio_Init();
+	Memory_Init();
+	RTCC_Init();
+	AD_Init(AD_SAMPLING_FREUENCY);
+
+	LedInit(&LedAlive, LED_ALIVE, LED_POLARITY_ON_HIGH, false);
+	LedSetBlink(&LedAlive, 100, 900);
+
+	GpioInit(&Sensor_Trigger, SENSOR_TRIG_PIN, PIN_INPUT, PIN_PUSH_PULL, PIN_PULL_UP, 0, PIN_SPEED_FREQ_HIGH);
+	GpioSetInterrupt(&Sensor_Trigger, IRQ_FALLING_EDGE, IRQ_HIGH_PRIORITY, &SensorTriggerInterrupt_Handler);
+
+	GpioInit(&GlobalSync, GLOBAL_SYNC_PIN, PIN_INPUT, PIN_PUSH_PULL, PIN_PULL_UP, 0, PIN_SPEED_FREQ_HIGH);
+	GpioSetInterrupt(&GlobalSync, IRQ_FALLING_EDGE, IRQ_HIGH_PRIORITY, &GlobalSyncInterrupt_Handler);
+
+	AdcInit(&adcVoltageInput, VIN_DET_PIN, VIN_DET_ADC);
+	AdcConfig(&adcVoltageInput);
+	uint32_t v = AdcReadChannel(&adcVoltageInput, VIN_DET_CH);
+
+	GpioInit(&Relay_IPC, RELAY_IPC_PIN, PIN_OUTPUT, PIN_PUSH_PULL, PIN_PULL_UP, 0, PIN_SPEED_FREQ_HIGH);
+	
+	RpmCalculator_Init();
+#pragma endregion
+
+#pragma region POWER UP
+	AudioOut_PlayTones(BeeprTone_2BeepsFast);
+	RGB_SetColor(RGB_COLOR_RED);
+	RGB_Render();
+	DelayMs(1000);
+	RGB_SetColor(RGB_COLOR_GREEN);
+	RGB_Render();
+	DelayMs(1000);
+#pragma endregion
+	
+	pMainVariables->Sensors[0].Margin.Short  = 50000; 
+	pMainVariables->Sensors[0].Margin.Break  = 15000; 
+	pMainVariables->Sensors[0].Margin.LimitLow = 17000;
+	pMainVariables->Sensors[0].Margin.LimitHigh = 45000;
+	pMainVariables->Sensors[1].Margin.Short  = 50000; 
+	pMainVariables->Sensors[1].Margin.Break  = 15000; 
+	pMainVariables->Sensors[1].Margin.LimitLow = 17000;
+	pMainVariables->Sensors[1].Margin.LimitHigh = 45000;
+	pMainVariables->Sensors[2].Margin.Short  = 65000; 
+	pMainVariables->Sensors[2].Margin.Break  = 11400; 
+	pMainVariables->Sensors[2].Margin.LimitLow = 12000;
+	pMainVariables->Sensors[2].Margin.LimitHigh = 64000;
+	pMainVariables->Sensors[3].Margin.Disconnected = 0;
+	pMainVariables->Sensors[3].Margin.LimitLow = 0;
+	pMainVariables->Sensors[3].Margin.LimitHigh = 63000;
+	
+	pMainVariables->Sensors[0].Calibration.a = 0.1206 / 189.9;
+	pMainVariables->Sensors[0].Calibration.b = -1354.0 / 189.0;
+	pMainVariables->Sensors[1].Calibration.a = 0.12 / 190.0;
+	pMainVariables->Sensors[1].Calibration.b = -1350.0 / 190.0;
+	pMainVariables->Sensors[2].Calibration.a = 0.3958;
+	pMainVariables->Sensors[2].Calibration.b = -4463.0;
+	pMainVariables->Sensors[3].Calibration.a = 1;
+	pMainVariables->Sensors[3].Calibration.b = 0;
+
+	while (1)
+	{
+#pragma region SAMPLE SENSOR 
+		uint32_t iSampleCount = DATA_SAMPLES_PER_ROUND / DATA_SAMPLE_SCALE;
+#ifdef SAMPLE_TRIGGER_MODE_ENABLE
+		if (SensorTrigger_IsRun())
+		{
+			RpmCalculator_ResetCounter();
+			Sensor_TrigIsHappen = false;
+			uint32_t timeout = 0;
+			while (!Sensor_TrigIsHappen && timeout < 0xFFFFFFF0) ;
+			{
+				timeout++;
+			}
+			if (Sensor_TriggerDuration < 10000000)
+			{
+				Sensor_TriggerDuration = 10000000;
+			}
+			if (Sensor_TriggerDuration > 100000000)
+			{
+				Sensor_TriggerDuration = 100000000;
+			}
+			SamplingSetup(Sensor_TriggerDuration / iSampleCount);
+			startAcq = HAL_GetTick();
+			while (SamplingRun(iSampleCount) == false)
+			{
+			}
+			SensorSamplingIsDone = true;
+			Sensor_TrigIsHappen = false;
+		}
+		else
+		{
+			Sensor_TrigIsHappen = false;
+		}
+#else
+		RpmCalculator_ResetCounter();
+		Sensor_TriggerDuration = COUNTER_FOR_ONE_CYCLE;
+		SamplingSetup(Sensor_TriggerDuration / iSampleCount);
+		startAcq = HAL_GetTick();
+		while (SamplingRun(iSampleCount) == false)
+		{
+		}
+		SensorSamplingIsDone = true;
+		Sensor_TrigIsHappen = false;
+#ifdef DATA_SIMULATED_ENABLE
+		for (int i = 0; i < DATA_SAMPLES_PER_ROUND; ++i)
+		{																   
+			pMainVariables->Sensors[0].DataBuffer[i] = SampleData_Pressure1[i] + (RngGetUint8() / 8);
+			pMainVariables->Sensors[0].DataBuffer[i] = SampleData_Pressure1[i] + (RngGetUint8() / 8);
+			pMainVariables->Sensors[1].DataBuffer[i] = SampleData_Pressure2[i] + (RngGetUint8() / 8);
+			pMainVariables->Sensors[2].DataBuffer[i] = SampleData_Proximity[i] + (RngGetUint8() / 4);
+			pMainVariables->Sensors[3].DataBuffer[i] = SampleData_Vibration_Healthy[i] + (RngGetUint8() / 8);
+		}
+		uint16_t minVibration = 0xffff;
+		uint16_t minIndex = 0;
+		for (int i = 0; i < DATA_SAMPLES_PER_ROUND; ++i)
+		{
+			if (pMainVariables->Sensors[3].DataBuffer[i] < minVibration)
+			{
+				minVibration = pMainVariables->Sensors[3].DataBuffer[i];
+				minIndex = i;
+			}
+		}
+		for (int i = 0; i < DATA_SAMPLES_PER_ROUND; ++i)
+		{
+			pMainVariables->Sensors[2].Buffer[i] = pMainVariables->Sensors[3].DataBuffer[(i + minIndex) % DATA_SAMPLES_PER_ROUND];
+		}
+#endif
+#endif
+		durationAcq = HAL_GetTick() - startAcq;
+		float fRPM  = 10000;
+		if (Sensor_TriggerDuration > 0)
+		{
+			fRPM =  (HAL_RCC_GetHCLKFreq() / Sensor_TriggerDuration) * 60;
+		}
+		uint16_t mMotorRPM = fRPM;
+#pragma endregion
+		
+#pragma region CHECK STATUS
+		uint32_t v = AdcReadChannel(&adcVoltageInput, VIN_DET_CH) * VIN_DET_SCALE;
+		if (v < 11000)
+		{
+			RGB_SetColor_ByIndex(0, RGB_COLOR_YELLOW);
+		}
+		else if (v > 28000)
+		{
+			RGB_SetColor_ByIndex(0, RGB_COLOR_RED);
+		}
+		else
+		{
+			RGB_SetColor_ByIndex(0, RGB_COLOR_GREEN);
+		}
+		RGB_SetColor_ByIndex(0, RGB_COLOR_GREEN);
+		
+		if (HAL_GetTick() - LastTime_TrigReceived > 3000)
+		{
+			Sensor_TrigIsAvailable = false;
+		}
+		if (Sensor_TrigIsAvailable)
+		{
+			RGB_SetColor_ByIndex(RGB_STATUS_TRIGGER, RGB_COLOR_GREEN);
+		}
+		else
+		{
+			RGB_SetColor_ByIndex(RGB_STATUS_TRIGGER, RGB_COLOR_RED);
+		}
+		
+		for (int i = 0; i < SENSOR_COUNT; ++i)
+		{
+			Sensor_RawValue[i] = AD_ReadRaw(i);
+			Sensor_CheckStatus(i, Sensor_RawValue[i], true);
+		}
+		RGB_Render();
+		LedProcess();
+		DelayMs(2);
+#pragma endregion
+		
+#pragma region SIGNAL CONDITION
+		for (uint8_t s = 0; s < SENSOR_COUNT; ++s)
+		{
+			for (uint16_t i = 0; i < DATA_SAMPLES_PER_ROUND; ++i)
+			{
+				pMainVariables->Sensors[s].DataBuffer[i] = pMainVariables->Sensors[s].DataBuffer[i]*pMainVariables->Sensors[s].Calibration.a + pMainVariables->Sensors[s].DataBuffer[i]*pMainVariables->Sensors[s].Calibration.b;
+			}
+		}
+#pragma endregion
+		
+#pragma region SEND
+		if (SensorSamplingIsDone)
+		{
+			for (int c = 0; c < SENSOR_COUNT; ++c)
+			{
+				pMainVariables->Sensors[c].Type = SensorType_Unknown;
+				pMainVariables->Sensors[c].Status = (uint16_t)Sensor_Status[c];
+				pMainVariables->Sensors[c].Interval = ((Sensor_TriggerDuration / DATA_SAMPLES_PER_ROUND) * 1000) / (HAL_RCC_GetHCLKFreq() / 1000000);
+				pMainVariables->Sensors[c].Length = 2 + 2 + 4 + 2 + (sizeof(int16_t) * DATA_COUNT_BUFFER * DATA_COLLECT_COUNT);
+			}
+			msgMain = MessageType_SendData;
+			xQueueSend(qMessageHandlerCom, &msgMain, portMAX_DELAY);
+			xQueueReceive(qMessageHandlerMain, &msgMain, portMAX_DELAY);
+			if (msgMain == MessageType_SendDone)
+			{
+			}
+		}
+		durationSend = HAL_GetTick() - startAcq - durationAcq;
+#pragma endregion
+	}
+}
+// -------------------------------------------------------------------------

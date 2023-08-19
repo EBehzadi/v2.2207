@@ -1,0 +1,382 @@
+VisualGDB/Debug/_7_/_Library/ARM/Library/LAN/App/httpserver_netconn.o: \
+ D:/Datall/_Library/ARM/Library/LAN/App/httpserver_netconn.c \
+ Board/config.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/CMSIS_HAL/Device/ST/STM32H7xx/Include/stm32h7xx.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/CMSIS_HAL/Device/ST/STM32H7xx/Include/stm32h743xx.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/CMSIS_HAL/Core/Include/core_cm7.h \
+ c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include\stdint.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\stdint.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\_default_types.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\features.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\_newlib_version.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_intsup.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_stdint.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/CMSIS_HAL/Core/Include/cmsis_version.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/CMSIS_HAL/Core/Include/cmsis_compiler.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/CMSIS_HAL/Core/Include/cmsis_gcc.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/CMSIS_HAL/Core/Include/mpu_armv7.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/CMSIS_HAL/Device/ST/STM32H7xx/Include/system_stm32h7xx.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
+ D:/Datall/Datall/CM/Instrument/MCU/DAQ/v2.2207/Card/stm32h7xx_hal_conf.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+ c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include\stddef.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\math.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\reent.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\_ansi.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\newlib.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\config.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\ieeefp.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_types.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\_types.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\lock.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\cdefs.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\_ansi.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc_ex.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio_ex.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma_ex.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hash.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dcmi.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dsi.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dfsdm.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dts.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_eth.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_eth_ex.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_fdcan.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cec.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_comp.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cordic.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cryp.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac_ex.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gfxmmu.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_fmac.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hrtim.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sram.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_fmc.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_nor.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_nand.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2s.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_iwdg.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_jpeg.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdios.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mmc.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_sdmmc.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mmc_ex.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_lptim.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_ltdc.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_ltdc_ex.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_opamp.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_opamp_ex.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_ospi.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_otfdec.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pssi.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_qspi.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_ramecc.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rng.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rtc.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rtc_ex.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sai.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sai_ex.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sd.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_delayblock.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sd_ex.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sdram.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi_ex.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spdifrx.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_swpmi.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_usart.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_usart_ex.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_irda.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_irda_ex.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_smartcard.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_smartcard_ex.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_smbus.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_wwdg.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd_ex.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hcd.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc_ex.h \
+ c:\users\zima\appdata\local\visualgdb\embeddedbsps\arm-eabi\com.sysprogs.arm.stm32\freertos\source\cmsis_rtos\cmsis_os.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/FreeRTOS/Source/Include/FreeRTOS.h \
+ D:/Datall/Datall/CM/Instrument/MCU/DAQ/v2.2207/Card/FreeRTOSConfig.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/FreeRTOS/Source/Include/projdefs.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/FreeRTOS/Source/Include/portable.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/FreeRTOS/Source/Include/deprecated_definitions.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/FreeRTOS/Source/Portable/gcc/ARM_CM7/r0p1/portmacro.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/FreeRTOS/Source/Include/mpu_wrappers.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/FreeRTOS/Source/Include/task.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/FreeRTOS/Source/Include/list.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/FreeRTOS/Source/Include/timers.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/FreeRTOS/Source/Include/task.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/FreeRTOS/Source/Include/queue.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/FreeRTOS/Source/Include/semphr.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/FreeRTOS/Source/Include/queue.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/FreeRTOS/Source/Include/event_groups.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/FreeRTOS/Source/Include/timers.h \
+ d:\datall\_library\arm\library\lan\lwip\src\include\lwip\opt.h \
+ d:\datall\_library\arm\library\lan\lwipopts.h \
+ d:\datall\_library\arm\library\lan\lwip\src\include\lwip\debug.h \
+ d:\datall\_library\arm\library\lan\lwip\src\include\lwip\arch.h \
+ d:\datall\_library\arm\library\lan\lwip\system\arch\cc.h \
+ d:\datall\_library\arm\library\lan\lwip\system\arch\cpu.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\stdlib.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\stdlib.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\alloca.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\stdio.h \
+ c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include\stdarg.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\types.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\endian.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\_endian.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\select.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_sigset.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_timeval.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\timespec.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_timespec.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_pthreadtypes.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\sched.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\types.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\stdio.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\time.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\time.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\time.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_locale.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\_time.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\inttypes.h \
+ c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include-fixed\limits.h \
+ c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include-fixed\syslimits.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\limits.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\syslimits.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\ctype.h \
+ d:\datall\_library\arm\library\lan\lwip\src\include\lwip\api.h \
+ d:\datall\_library\arm\library\lan\lwip\src\include\lwip\netbuf.h \
+ d:\datall\_library\arm\library\lan\lwip\src\include\lwip\pbuf.h \
+ d:\datall\_library\arm\library\lan\lwip\src\include\lwip\err.h \
+ d:\datall\_library\arm\library\lan\lwip\src\include\lwip\ip_addr.h \
+ d:\datall\_library\arm\library\lan\lwip\src\include\lwip\def.h \
+ d:\datall\_library\arm\library\lan\lwip\src\include\lwip\ip4_addr.h \
+ d:\datall\_library\arm\library\lan\lwip\src\include\lwip\ip6_addr.h \
+ d:\datall\_library\arm\library\lan\lwip\src\include\lwip\def.h \
+ d:\datall\_library\arm\library\lan\lwip\src\include\lwip\sys.h \
+ d:\datall\_library\arm\library\lan\lwip\system\arch\sys_arch.h \
+ C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h \
+ D:/Datall/_Library/ARM/Library/LAN/App/httpserver_netconn.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\string.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\strings.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\string.h
+Board/config.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/CMSIS_HAL/Device/ST/STM32H7xx/Include/stm32h7xx.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/CMSIS_HAL/Device/ST/STM32H7xx/Include/stm32h743xx.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/CMSIS_HAL/Core/Include/core_cm7.h:
+c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include\stdint.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\stdint.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\_default_types.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\features.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\_newlib_version.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_intsup.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_stdint.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/CMSIS_HAL/Core/Include/cmsis_version.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/CMSIS_HAL/Core/Include/cmsis_compiler.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/CMSIS_HAL/Core/Include/cmsis_gcc.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/CMSIS_HAL/Core/Include/mpu_armv7.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/CMSIS_HAL/Device/ST/STM32H7xx/Include/system_stm32h7xx.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
+D:/Datall/Datall/CM/Instrument/MCU/DAQ/v2.2207/Card/stm32h7xx_hal_conf.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:
+c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include\stddef.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\math.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\reent.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\_ansi.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\newlib.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\config.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\ieeefp.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_types.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\_types.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\lock.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\cdefs.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\_ansi.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc_ex.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio_ex.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma_ex.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hash.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dcmi.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dsi.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dfsdm.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dts.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_eth.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_eth_ex.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_fdcan.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cec.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_comp.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cordic.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cryp.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac_ex.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gfxmmu.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_fmac.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hrtim.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sram.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_fmc.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_nor.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_nand.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2s.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_iwdg.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_jpeg.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdios.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mmc.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_sdmmc.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mmc_ex.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_lptim.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_ltdc.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_ltdc_ex.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_opamp.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_opamp_ex.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_ospi.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_otfdec.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pssi.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_qspi.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_ramecc.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rng.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rtc.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rtc_ex.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sai.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sai_ex.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sd.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_delayblock.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sd_ex.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sdram.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi_ex.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spdifrx.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_swpmi.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_usart.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_usart_ex.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_irda.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_irda_ex.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_smartcard.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_smartcard_ex.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_smbus.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_wwdg.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd_ex.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hcd.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32H7xxxx/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc_ex.h:
+c:\users\zima\appdata\local\visualgdb\embeddedbsps\arm-eabi\com.sysprogs.arm.stm32\freertos\source\cmsis_rtos\cmsis_os.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/FreeRTOS/Source/Include/FreeRTOS.h:
+D:/Datall/Datall/CM/Instrument/MCU/DAQ/v2.2207/Card/FreeRTOSConfig.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/FreeRTOS/Source/Include/projdefs.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/FreeRTOS/Source/Include/portable.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/FreeRTOS/Source/Include/deprecated_definitions.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/FreeRTOS/Source/Portable/gcc/ARM_CM7/r0p1/portmacro.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/FreeRTOS/Source/Include/mpu_wrappers.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/FreeRTOS/Source/Include/task.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/FreeRTOS/Source/Include/list.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/FreeRTOS/Source/Include/timers.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/FreeRTOS/Source/Include/task.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/FreeRTOS/Source/Include/queue.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/FreeRTOS/Source/Include/semphr.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/FreeRTOS/Source/Include/queue.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/FreeRTOS/Source/Include/event_groups.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/FreeRTOS/Source/Include/timers.h:
+d:\datall\_library\arm\library\lan\lwip\src\include\lwip\opt.h:
+d:\datall\_library\arm\library\lan\lwipopts.h:
+d:\datall\_library\arm\library\lan\lwip\src\include\lwip\debug.h:
+d:\datall\_library\arm\library\lan\lwip\src\include\lwip\arch.h:
+d:\datall\_library\arm\library\lan\lwip\system\arch\cc.h:
+d:\datall\_library\arm\library\lan\lwip\system\arch\cpu.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\stdlib.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\stdlib.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\alloca.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\stdio.h:
+c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include\stdarg.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\types.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\endian.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\_endian.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\select.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_sigset.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_timeval.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\timespec.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_timespec.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_pthreadtypes.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\sched.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\types.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\stdio.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\time.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\time.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\time.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_locale.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\_time.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\inttypes.h:
+c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include-fixed\limits.h:
+c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include-fixed\syslimits.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\limits.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\syslimits.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\ctype.h:
+d:\datall\_library\arm\library\lan\lwip\src\include\lwip\api.h:
+d:\datall\_library\arm\library\lan\lwip\src\include\lwip\netbuf.h:
+d:\datall\_library\arm\library\lan\lwip\src\include\lwip\pbuf.h:
+d:\datall\_library\arm\library\lan\lwip\src\include\lwip\err.h:
+d:\datall\_library\arm\library\lan\lwip\src\include\lwip\ip_addr.h:
+d:\datall\_library\arm\library\lan\lwip\src\include\lwip\def.h:
+d:\datall\_library\arm\library\lan\lwip\src\include\lwip\ip4_addr.h:
+d:\datall\_library\arm\library\lan\lwip\src\include\lwip\ip6_addr.h:
+d:\datall\_library\arm\library\lan\lwip\src\include\lwip\def.h:
+d:\datall\_library\arm\library\lan\lwip\src\include\lwip\sys.h:
+d:\datall\_library\arm\library\lan\lwip\system\arch\sys_arch.h:
+C:/Users/zima/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:
+D:/Datall/_Library/ARM/Library/LAN/App/httpserver_netconn.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\string.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\strings.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\string.h:

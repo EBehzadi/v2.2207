@@ -1,0 +1,1981 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{aaff0196-7ed4-470d-b995-f014a9e4ac4e}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{e24cd233-a606-4cf5-8c1c-806fffe2380d}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source files\Device-specific files">
+      <UniqueIdentifier>{dbcf121a-8da9-4a98-89cd-b99462f40387}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\HAL">
+      <UniqueIdentifier>{9e05aa54-28be-4937-b9db-25de95ecacb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\LL">
+      <UniqueIdentifier>{58b20dbf-c036-4857-9cd3-28c27f072564}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files">
+      <UniqueIdentifier>{3fc4cde1-dd35-4123-8448-aa3717ef3660}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\HAL">
+      <UniqueIdentifier>{b3bf34c1-4aa3-4ca2-b646-a44da74796a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\LL">
+      <UniqueIdentifier>{33f89b0a-5699-4371-b825-bc10edfb8ca9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{378f05da-c8ea-4408-9149-e8130088394a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\FreeRTOS">
+      <UniqueIdentifier>{aca1b976-c632-4a39-b580-595daf8b57ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\FreeRTOS">
+      <UniqueIdentifier>{1115dc15-b56a-4110-b6c8-23e050834491}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Board">
+      <UniqueIdentifier>{f437595c-159c-4172-b400-9ad676b9a6e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Config">
+      <UniqueIdentifier>{7c32b462-2e87-4413-9990-921d5d5e6a89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Driver">
+      <UniqueIdentifier>{2101527e-d3bf-4104-afb7-c658105e6e0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library">
+      <UniqueIdentifier>{06a821a7-2551-453c-a9a7-fbcfc8ead36b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\Audio">
+      <UniqueIdentifier>{3c903fbe-853d-4dbd-bba3-5aca84b2e683}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\LAN">
+      <UniqueIdentifier>{de608d83-24a8-4f58-b3a4-657bf20d530d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\USB">
+      <UniqueIdentifier>{195caa7b-8ff0-4e50-bcac-cb7b39d6293d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\RGB">
+      <UniqueIdentifier>{7ebd1651-3595-4e7a-b5af-19eeab2fcbf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\Memory">
+      <UniqueIdentifier>{abae6642-454d-49fb-8a33-b596f3f66d94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\Modbus">
+      <UniqueIdentifier>{cff933d8-6dc0-4492-a809-822ea0c9a9a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Board">
+      <UniqueIdentifier>{8e89fa4e-6b53-452a-8d18-1c1d766e27ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Driver">
+      <UniqueIdentifier>{780e8c98-3565-4d39-acc4-8726dd8911f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Driver\HAL">
+      <UniqueIdentifier>{69bd6f90-40f8-45d0-9e33-772797f8ff53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Driver\HAL">
+      <UniqueIdentifier>{e16b4b3d-6cdf-4998-880e-0c8f7b958ec2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library">
+      <UniqueIdentifier>{515fb48e-fbc0-4983-8713-49325fcd3832}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\LAN">
+      <UniqueIdentifier>{2afc2d33-0b50-4ef8-9ec6-648d8810dffc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\LAN\HW">
+      <UniqueIdentifier>{55b2775e-365e-4f19-aeda-038177eda1de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\LAN\LwIP">
+      <UniqueIdentifier>{6a36a6b5-eb4e-47ea-b190-dcfef9837b85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\LAN\LwIP\src">
+      <UniqueIdentifier>{c9291c01-a88d-40be-80a2-a75164ad0fac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\LAN\LwIP\src\api">
+      <UniqueIdentifier>{63ad76f4-bdf6-4893-a8e3-d2dbebbe53b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\LAN\LwIP\src\core">
+      <UniqueIdentifier>{f2b241b7-8116-4342-ad81-bf774d5aeb01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\LAN\LwIP\src\core\ipv4">
+      <UniqueIdentifier>{97f0307e-2a0b-473c-8af9-97f0101635ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\LAN\LwIP\src\include">
+      <UniqueIdentifier>{4c1b7877-9e45-45b2-8644-19b8f9372cc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\LAN\LwIP\src\include\lwip">
+      <UniqueIdentifier>{48efc004-7121-4b2e-aaaa-c95680d73b82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\LAN\LwIP\src\include\lwip\apps">
+      <UniqueIdentifier>{8aea6962-d1fe-46b9-b537-02eb6e5f20e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\LAN\LwIP\src\include\lwip\priv">
+      <UniqueIdentifier>{d50b79ad-4a68-4bc0-a511-772ca1291e03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\LAN\LwIP\src\include\lwip\prot">
+      <UniqueIdentifier>{c510d3e0-8d7e-4c78-9518-3bb7f84eb789}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\LAN\LwIP\src\include\netif">
+      <UniqueIdentifier>{0f20c28d-497c-4905-b029-b50cc12443b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\LAN\LwIP\src\include\netif\ppp">
+      <UniqueIdentifier>{9b785f12-23ae-44a3-bc03-d0de96f73e7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\LAN\LwIP\src\netif">
+      <UniqueIdentifier>{72a454f7-0bf3-4ced-8edd-ca5f131a6ab6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\LAN\LwIP\system">
+      <UniqueIdentifier>{51549eb6-836a-48df-aee2-3c0cf3c0cb22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\LAN\LwIP\system\arch">
+      <UniqueIdentifier>{56118405-7a82-4be1-882e-b44e7cafb385}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\LAN\LwIP\system\OS">
+      <UniqueIdentifier>{e283db54-b251-4a65-98d3-9ecc4456836a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\LAN\HW">
+      <UniqueIdentifier>{48e9976e-3250-469e-a443-a52b53efce3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\LAN\LwIP">
+      <UniqueIdentifier>{1bcdbed8-707e-4bfd-a60f-f2d06ba55ea3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\LAN\LwIP\src">
+      <UniqueIdentifier>{9cf43900-05f4-4b87-b1d8-0b87f8e68654}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\LAN\LwIP\src\api">
+      <UniqueIdentifier>{ca573fe3-0797-4845-9781-a402b801ca1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\LAN\LwIP\src\core">
+      <UniqueIdentifier>{847de578-4593-471a-a53d-a0c7b65f74e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\LAN\LwIP\src\core\ipv4">
+      <UniqueIdentifier>{4663b031-9587-40a5-930c-29de1a2f7d1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\LAN\LwIP\src\include">
+      <UniqueIdentifier>{e59d0326-bd36-42cf-83c5-7dd2cc7f8d21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\LAN\LwIP\src\include\lwip">
+      <UniqueIdentifier>{4dc5d2fb-b2e5-45a7-b052-8d260ed5eae6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\LAN\LwIP\src\include\lwip\apps">
+      <UniqueIdentifier>{9139ada3-09fe-4e72-b58f-5311feab2ec8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\LAN\LwIP\src\include\lwip\priv">
+      <UniqueIdentifier>{9313d0ab-5254-4492-8fb3-ebd534858c50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\LAN\LwIP\src\include\lwip\prot">
+      <UniqueIdentifier>{db2425e3-81d5-49d4-adc8-ab6e555cb15f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\LAN\LwIP\src\include\netif">
+      <UniqueIdentifier>{63df079f-31ef-4569-bcdd-2c51893146cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\LAN\LwIP\src\include\netif\ppp">
+      <UniqueIdentifier>{5568a0fd-4549-45ec-bbdc-dc6c08108995}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\LAN\LwIP\src\netif">
+      <UniqueIdentifier>{daaa9ace-833a-41b0-a4f9-b32c7da6f196}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\LAN\LwIP\system">
+      <UniqueIdentifier>{c3f2b94e-582d-441e-9295-9ba3eacf85e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\LAN\LwIP\system\arch">
+      <UniqueIdentifier>{87f385df-e621-4f76-9864-371a6d8b0c63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\LAN\LwIP\system\OS">
+      <UniqueIdentifier>{ee0a68f9-f16a-4eeb-8080-a271b46fee23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Task">
+      <UniqueIdentifier>{051504f3-02bd-46e3-bb39-4fe7f80a13f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Task">
+      <UniqueIdentifier>{39c4ff59-76d2-48b1-a22f-dd2c5b4221aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\Audio">
+      <UniqueIdentifier>{b2ad433c-d079-466b-87df-a693377af326}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\Audio\HW">
+      <UniqueIdentifier>{f6455ba3-e8e9-4df8-8439-7bce26e1117e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\Audio\HW">
+      <UniqueIdentifier>{48026b1c-b604-4aea-905c-2a11400e96fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\Modbus">
+      <UniqueIdentifier>{72183689-c47a-4899-a1c5-bd645ddb06ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\RGB">
+      <UniqueIdentifier>{01355796-2e80-4b0e-8d08-1d9374134874}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\RGB\HW">
+      <UniqueIdentifier>{f911b883-2e10-4da1-a273-adc55611c169}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\RGB\HW">
+      <UniqueIdentifier>{6d86a8b2-6db3-4e6b-bd14-d2b9a33fec7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\Memory">
+      <UniqueIdentifier>{18c8b0cc-2a42-4068-a94c-6edfee6158c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\Memory\HW">
+      <UniqueIdentifier>{18508192-3ad8-4d55-8b94-1c56ca3074b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\Memory\HW">
+      <UniqueIdentifier>{4a76970f-d882-4ed4-9012-e58342b5883b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\USB">
+      <UniqueIdentifier>{6a82112a-87b3-431f-b336-357b188435b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\USB\Class">
+      <UniqueIdentifier>{242236c4-2b6a-4f37-ac94-4322b50456f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\USB\Class\CDC">
+      <UniqueIdentifier>{ef7f5e7c-bd36-4d9d-8f71-6b5efa716412}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\USB\Core">
+      <UniqueIdentifier>{ca2e4387-b5d8-4ed2-aef5-6514c158422f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\USB\Class">
+      <UniqueIdentifier>{88b9da0d-3791-4638-9b7f-c0565c92bc87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\USB\Class\CDC">
+      <UniqueIdentifier>{5c49f74a-f71f-46be-9dfb-e600a2c32fb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\USB\Core">
+      <UniqueIdentifier>{9eaadf40-1620-468d-abd4-08095b272396}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\USB\Config">
+      <UniqueIdentifier>{a5655515-2514-4387-b6ef-bc2239101bd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\USB\Config">
+      <UniqueIdentifier>{55f40e07-77ea-4e3d-a081-ec86c7649b52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\LAN\App">
+      <UniqueIdentifier>{498c7750-d87f-4d58-830a-c3431c51d804}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\LAN\App">
+      <UniqueIdentifier>{e6492937-0a9e-4439-b21c-711558f92587}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\RTCC">
+      <UniqueIdentifier>{e736e8e0-340e-4fd7-b877-e1f410f196d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\RTCC">
+      <UniqueIdentifier>{f2fe6b8e-3068-4385-aa45-993a4bbb2215}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\RTCC\HW">
+      <UniqueIdentifier>{601e9fdd-390d-4f24-b719-66bfb33be3a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\RTCC\HW">
+      <UniqueIdentifier>{cf09a16c-e708-4678-a609-c20b1a7fa557}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\AD">
+      <UniqueIdentifier>{8e6396a0-71c9-4d82-95c1-29627611c66c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\AD">
+      <UniqueIdentifier>{251a9058-2bde-486b-ad2c-7d68bd3ab3ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\AD\HW">
+      <UniqueIdentifier>{5a3b3ae4-c7a4-4a4c-b3a6-3f5c3f6719d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\AD\HW">
+      <UniqueIdentifier>{21c457c9-6a84-4788-9c25-3bfcb4cf6eff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\WiFi">
+      <UniqueIdentifier>{8cfe6d81-e33b-4bff-9832-47611da02fdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\WiFi">
+      <UniqueIdentifier>{7b4e97bb-dfe9-4b95-b525-020ebdf9acbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\WiFi\HW">
+      <UniqueIdentifier>{dd69ad56-6cd5-4cda-8384-50cf582f9742}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\Sensor">
+      <UniqueIdentifier>{16a2df4b-8ed2-4553-9059-4eb6ad11dba9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Library\Sensor\HW">
+      <UniqueIdentifier>{1fa1ead2-81c7-416d-967d-b2bdbd0671aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\Sensor">
+      <UniqueIdentifier>{69dccb6f-a4ff-42f1-bcdf-e5a04d63ce45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Library\Sensor\HW">
+      <UniqueIdentifier>{2ae28e0f-3351-417f-875b-79abfc2684cd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="system_stm32h7xx.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <None Include="stm32.props">
+      <Filter>Source files\Device-specific files</Filter>
+    </None>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\StartupFiles\startup_stm32h743xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_adc.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_adc_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_cec.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_comp.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_cordic.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_cortex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_crc.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_crc_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_cryp.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_cryp_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dac.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dac_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dcmi.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dfsdm.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dfsdm_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma2d.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dsi.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dts.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_eth.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_eth_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_exti.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_fdcan.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_flash.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_flash_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_fmac.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_gfxmmu.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_gpio.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_hash.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_hash_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_hcd.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_hrtim.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_hsem.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2s.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2s_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_irda.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_iwdg.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_jpeg.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_lptim.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_ltdc.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_ltdc_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_mdios.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_mdma.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_mmc.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_mmc_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_nand.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_nor.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_opamp.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_opamp_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_ospi.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_otfdec.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pcd.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pcd_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pssi.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_qspi.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_ramecc.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rng.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rng_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rtc.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rtc_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_sai.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_sai_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_sd.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_sdram.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_sd_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_smartcard.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_smartcard_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_smbus.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_spdifrx.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_spi.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_spi_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_sram.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_swpmi.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_usart.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_usart_ex.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_wwdg.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_usb.c">
+      <Filter>Source files\Device-specific files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_adc.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_bdma.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_comp.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_cordic.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_crc.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_crs.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_dac.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_delayblock.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_dma.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_dma2d.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_exti.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_fmac.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_fmc.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_gpio.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_hrtim.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_i2c.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_lptim.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_lpuart.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_mdma.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_opamp.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_pwr.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_rcc.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_rng.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_rtc.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_sdmmc.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_spi.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_swpmi.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_tim.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_usart.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_utils.c">
+      <Filter>Source files\Device-specific files\LL</Filter>
+    </ClCompile>
+    <ClInclude Include="stm32h7xx_hal_conf.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_adc.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_adc_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_cec.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_comp.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_cordic.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_cortex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_crc.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_crc_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_cryp.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_cryp_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dac.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dac_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dcmi.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dfsdm.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dfsdm_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dma.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dma2d.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dma_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dsi.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dts.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_eth.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_eth_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_exti.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_fdcan.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_flash.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_flash_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_fmac.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gfxmmu.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hash.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hash_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hrtim.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hsem.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_i2c.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_i2c_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_i2s.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_i2s_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_irda.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_irda_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_iwdg.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_jpeg.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_lptim.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_ltdc.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_ltdc_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_mdios.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_mdma.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_mmc.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_mmc_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_nand.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_nor.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_opamp.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_opamp_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_ospi.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_otfdec.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pssi.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_qspi.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_ramecc.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rng.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rng_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rtc.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rtc_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sai.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sai_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sd.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sd_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_smartcard.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_smartcard_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_smbus.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spdifrx.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sram.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_swpmi.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_usart.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_usart_ex.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_wwdg.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\cmsis_armcc.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\cmsis_armclang.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\cmsis_compiler.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\cmsis_gcc.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\cmsis_iccarm.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\cmsis_version.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_armv8mbl.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_armv8mml.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_cm0.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_cm0plus.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_cm1.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_cm23.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_cm3.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_cm33.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_cm4.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_cm7.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_sc000.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_sc300.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\mpu_armv7.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\mpu_armv8.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\tz_context.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Device\ST\STM32H7xx\Include\stm32h730xxq.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Device\ST\STM32H7xx\Include\stm32h7a3xxq.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Device\ST\STM32H7xx\Include\stm32h7b0xxq.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Device\ST\STM32H7xx\Include\stm32h7b3xxq.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Device\ST\STM32H7xx\Include\stm32h7xx.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Device\ST\STM32H7xx\Include\system_stm32h7xx.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\RTOS\Template\cmsis_os.h">
+      <Filter>Header files\Device-specific files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_adc.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_bdma.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_bus.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_comp.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_cordic.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_cortex.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_crc.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_crs.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_dac.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_delayblock.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_dma.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_dma2d.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_dmamux.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_exti.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmac.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_gpio.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_hrtim.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_hsem.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_i2c.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_iwdg.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_lptim.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_lpuart.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_mdma.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_opamp.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_pwr.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_rcc.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_rng.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_rtc.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_sdmmc.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_spi.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_swpmi.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_system.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_tim.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usart.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_utils.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_wwdg.h">
+      <Filter>Header files\Device-specific files\LL</Filter>
+    </ClInclude>
+    <None Include="Card-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="Card-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="stm32.xml">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="$(BSP_ROOT)\FreeRTOS\License\license.txt">
+      <Filter>Source files\Device-specific files\FreeRTOS</Filter>
+    </None>
+    <ClCompile Include="$(BSP_ROOT)\FreeRTOS\Source\croutine.c">
+      <Filter>Source files\Device-specific files\FreeRTOS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\FreeRTOS\Source\event_groups.c">
+      <Filter>Source files\Device-specific files\FreeRTOS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\FreeRTOS\Source\list.c">
+      <Filter>Source files\Device-specific files\FreeRTOS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\FreeRTOS\Source\queue.c">
+      <Filter>Source files\Device-specific files\FreeRTOS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\FreeRTOS\Source\stream_buffer.c">
+      <Filter>Source files\Device-specific files\FreeRTOS</Filter>
+    </ClCompile>
+    <None Include="$(BSP_ROOT)\FreeRTOS\Source\st_readme.txt">
+      <Filter>Source files\Device-specific files\FreeRTOS</Filter>
+    </None>
+    <ClCompile Include="$(BSP_ROOT)\FreeRTOS\Source\tasks.c">
+      <Filter>Source files\Device-specific files\FreeRTOS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\FreeRTOS\Source\timers.c">
+      <Filter>Source files\Device-specific files\FreeRTOS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.c">
+      <Filter>Source files\Device-specific files\FreeRTOS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\FreeRTOS\Source\portable\MemMang\heap_4.c">
+      <Filter>Source files\Device-specific files\FreeRTOS</Filter>
+    </ClCompile>
+    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.h">
+      <Filter>Header files\Device-specific files\FreeRTOS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\croutine.h">
+      <Filter>Header files\Device-specific files\FreeRTOS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\deprecated_definitions.h">
+      <Filter>Header files\Device-specific files\FreeRTOS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\event_groups.h">
+      <Filter>Header files\Device-specific files\FreeRTOS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\FreeRTOS.h">
+      <Filter>Header files\Device-specific files\FreeRTOS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\list.h">
+      <Filter>Header files\Device-specific files\FreeRTOS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\message_buffer.h">
+      <Filter>Header files\Device-specific files\FreeRTOS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\mpu_prototypes.h">
+      <Filter>Header files\Device-specific files\FreeRTOS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\mpu_wrappers.h">
+      <Filter>Header files\Device-specific files\FreeRTOS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\portable.h">
+      <Filter>Header files\Device-specific files\FreeRTOS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\projdefs.h">
+      <Filter>Header files\Device-specific files\FreeRTOS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\queue.h">
+      <Filter>Header files\Device-specific files\FreeRTOS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\semphr.h">
+      <Filter>Header files\Device-specific files\FreeRTOS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\StackMacros.h">
+      <Filter>Header files\Device-specific files\FreeRTOS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\stack_macros.h">
+      <Filter>Header files\Device-specific files\FreeRTOS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\stream_buffer.h">
+      <Filter>Header files\Device-specific files\FreeRTOS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\task.h">
+      <Filter>Header files\Device-specific files\FreeRTOS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\timers.h">
+      <Filter>Header files\Device-specific files\FreeRTOS</Filter>
+    </ClInclude>
+    <ClCompile Include="main.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="Board\board.c">
+      <Filter>Source files\Board</Filter>
+    </ClCompile>
+    <ClCompile Include="Board\timebase.c">
+      <Filter>Source files\Board</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\beeper.c">
+      <Filter>Source files\Driver\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\crc.c">
+      <Filter>Source files\Driver\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\delay.c">
+      <Filter>Source files\Driver\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\fifo.c">
+      <Filter>Source files\Driver\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\io.c">
+      <Filter>Source files\Driver\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\iwdg.c">
+      <Filter>Source files\Driver\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\led.c">
+      <Filter>Source files\Driver\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\pwm.c">
+      <Filter>Source files\Driver\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\spi.c">
+      <Filter>Source files\Driver\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\systime.c">
+      <Filter>Source files\Driver\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\timer.c">
+      <Filter>Source files\Driver\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\uart.c">
+      <Filter>Source files\Driver\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\utilities.c">
+      <Filter>Source files\Driver\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="freertos.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LAN.c">
+      <Filter>Source files\Library\LAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\HW\LAN8720.c">
+      <Filter>Source files\Library\LAN\HW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\api\api_lib.c">
+      <Filter>Source files\Library\LAN\LwIP\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\api\api_msg.c">
+      <Filter>Source files\Library\LAN\LwIP\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\api\err.c">
+      <Filter>Source files\Library\LAN\LwIP\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\api\netbuf.c">
+      <Filter>Source files\Library\LAN\LwIP\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\api\netdb.c">
+      <Filter>Source files\Library\LAN\LwIP\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\api\netifapi.c">
+      <Filter>Source files\Library\LAN\LwIP\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\api\sockets.c">
+      <Filter>Source files\Library\LAN\LwIP\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\api\tcpip.c">
+      <Filter>Source files\Library\LAN\LwIP\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\core\def.c">
+      <Filter>Source files\Library\LAN\LwIP\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\core\dns.c">
+      <Filter>Source files\Library\LAN\LwIP\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\core\inet_chksum.c">
+      <Filter>Source files\Library\LAN\LwIP\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\core\init.c">
+      <Filter>Source files\Library\LAN\LwIP\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\core\ip.c">
+      <Filter>Source files\Library\LAN\LwIP\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\core\mem.c">
+      <Filter>Source files\Library\LAN\LwIP\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\core\memp.c">
+      <Filter>Source files\Library\LAN\LwIP\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\core\netif.c">
+      <Filter>Source files\Library\LAN\LwIP\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\core\pbuf.c">
+      <Filter>Source files\Library\LAN\LwIP\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\core\raw.c">
+      <Filter>Source files\Library\LAN\LwIP\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\core\stats.c">
+      <Filter>Source files\Library\LAN\LwIP\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\core\sys.c">
+      <Filter>Source files\Library\LAN\LwIP\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\core\tcp.c">
+      <Filter>Source files\Library\LAN\LwIP\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\core\tcp_in.c">
+      <Filter>Source files\Library\LAN\LwIP\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\core\tcp_out.c">
+      <Filter>Source files\Library\LAN\LwIP\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\core\timeouts.c">
+      <Filter>Source files\Library\LAN\LwIP\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\core\udp.c">
+      <Filter>Source files\Library\LAN\LwIP\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\core\ipv4\autoip.c">
+      <Filter>Source files\Library\LAN\LwIP\src\core\ipv4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\core\ipv4\dhcp.c">
+      <Filter>Source files\Library\LAN\LwIP\src\core\ipv4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\core\ipv4\etharp.c">
+      <Filter>Source files\Library\LAN\LwIP\src\core\ipv4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\core\ipv4\icmp.c">
+      <Filter>Source files\Library\LAN\LwIP\src\core\ipv4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\core\ipv4\igmp.c">
+      <Filter>Source files\Library\LAN\LwIP\src\core\ipv4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\core\ipv4\ip4.c">
+      <Filter>Source files\Library\LAN\LwIP\src\core\ipv4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\core\ipv4\ip4_addr.c">
+      <Filter>Source files\Library\LAN\LwIP\src\core\ipv4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\core\ipv4\ip4_frag.c">
+      <Filter>Source files\Library\LAN\LwIP\src\core\ipv4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\netif\ethernet.c">
+      <Filter>Source files\Library\LAN\LwIP\src\netif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\netif\lowpan6.c">
+      <Filter>Source files\Library\LAN\LwIP\src\netif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\system\OS\sys_arch.c">
+      <Filter>Source files\Library\LAN\LwIP\system\OS</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\ethernetif.h">
+      <Filter>Header files\Library\LAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LAN.h">
+      <Filter>Header files\Library\LAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\lwipopts.h">
+      <Filter>Header files\Library\LAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\HW\LAN8720.h">
+      <Filter>Header files\Library\LAN\HW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\altcp.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\altcp_tcp.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\api.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\arch.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\autoip.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\debug.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\def.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\dhcp.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\dhcp6.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\dns.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\err.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\errno.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\etharp.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\icmp.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\icmp6.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\igmp.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\inet.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\inet_chksum.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\init.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\ip.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\ip4.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\ip4_addr.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\ip4_frag.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\ip6.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\ip6_addr.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\ip6_frag.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\ip_addr.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\mem.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\memp.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\mld6.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\nd6.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\netbuf.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\netdb.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\netif.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\opt.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\pbuf.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\raw.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\snmp.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\sockets.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\stats.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\sys.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\tcp.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\tcpbase.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\tcpip.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\timeouts.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\udp.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\apps\fs.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip\apps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\apps\httpd.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip\apps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\apps\httpd_opts.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip\apps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\priv\api_msg.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip\priv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\priv\memp_priv.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip\priv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\priv\memp_std.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip\priv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\priv\mem_priv.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip\priv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\priv\nd6_priv.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip\priv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\priv\raw_priv.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip\priv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\priv\sockets_priv.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip\priv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\priv\tcpip_priv.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip\priv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\priv\tcp_priv.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip\priv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\prot\dhcp.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip\prot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\prot\dns.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip\prot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\prot\etharp.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip\prot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\prot\ethernet.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip\prot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\prot\iana.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip\prot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\prot\icmp.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip\prot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\prot\icmp6.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip\prot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\prot\ieee.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip\prot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\prot\ip.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip\prot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\prot\ip4.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip\prot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\prot\tcp.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip\prot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\lwip\prot\udp.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\lwip\prot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\netif\etharp.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\netif</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\netif\ethernet.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\netif</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\netif\lowpan6.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\netif</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\netif\lowpan6_opts.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\netif</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\netif\ppp\ppp_impl.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\netif\ppp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\src\include\netif\ppp\ppp_opts.h">
+      <Filter>Header files\Library\LAN\LwIP\src\include\netif\ppp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\system\arch\cc.h">
+      <Filter>Header files\Library\LAN\LwIP\system\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\system\arch\cpu.h">
+      <Filter>Header files\Library\LAN\LwIP\system\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\LwIP\system\arch\sys_arch.h">
+      <Filter>Header files\Library\LAN\LwIP\system\arch</Filter>
+    </ClInclude>
+    <None Include="$(BSP_ROOT)\FreeRTOS\Source\portable\GCC\ARM_CM7\ReadMe.txt">
+      <Filter>Source files\Device-specific files\FreeRTOS</Filter>
+    </None>
+    <ClCompile Include="$(BSP_ROOT)\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1\port.c">
+      <Filter>Source files\Device-specific files\FreeRTOS</Filter>
+    </ClCompile>
+    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1\portmacro.h">
+      <Filter>Header files\Device-specific files\FreeRTOS</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\Audio\Audio.c">
+      <Filter>Source files\Library\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\Audio\HW\Buzzer.c">
+      <Filter>Source files\Library\Audio\HW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\Modbus\Modbus.c">
+      <Filter>Source files\Library\Modbus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\RGB\RGB.c">
+      <Filter>Source files\Library\RGB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\RGB\HW\WS2812.c">
+      <Filter>Source files\Library\RGB\HW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\Memory\Memory.c">
+      <Filter>Source files\Library\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\Memory\HW\W25QXX.c">
+      <Filter>Source files\Library\Memory\HW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\USB\USB.c">
+      <Filter>Source files\Library\USB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\USB\Class\CDC\usbd_cdc.c">
+      <Filter>Source files\Library\USB\Class\CDC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\USB\Core\usbd_core.c">
+      <Filter>Source files\Library\USB\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\USB\Core\usbd_ctlreq.c">
+      <Filter>Source files\Library\USB\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\USB\Core\usbd_ioreq.c">
+      <Filter>Source files\Library\USB\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="USB\usbd_conf.c">
+      <Filter>Source files\Library\USB\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="USB\usbd_desc.c">
+      <Filter>Source files\Library\USB\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\rng.c">
+      <Filter>Source files\Driver\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="Task\TaskCom.c">
+      <Filter>Source files\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\ethernetif.c">
+      <Filter>Source files\Library\LAN\LwIP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\App\client_netconn.c">
+      <Filter>Source files\Library\LAN\App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\App\httpserver_netconn.c">
+      <Filter>Source files\Library\LAN\App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\App\sockets_stresstest.c">
+      <Filter>Source files\Library\LAN\App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\App\tcp_echoclient.c">
+      <Filter>Source files\Library\LAN\App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\RTCC\ConvertCalendar.c">
+      <Filter>Source files\Library\RTCC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\RTCC\RTCC.c">
+      <Filter>Source files\Library\RTCC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\RTCC\HW\DS1307.c">
+      <Filter>Source files\Library\RTCC\HW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\i2c.c">
+      <Filter>Source files\Driver\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\AD\AD.c">
+      <Filter>Source files\Library\AD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\AD\HW\AD7686.c">
+      <Filter>Source files\Library\AD\HW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\adc.c">
+      <Filter>Source files\Driver\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="Task\TaskMain.c">
+      <Filter>Source files\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\Sensor\Sensor.c">
+      <Filter>Source files\Library\Sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\_Library\ARM\Library\Sensor\HW\SHT2x.c">
+      <Filter>Source files\Library\Sensor\HW</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Board\board.h">
+      <Filter>Header files\Board</Filter>
+    </ClInclude>
+    <ClInclude Include="Board\config.h">
+      <Filter>Header files\Board</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\Audio_Config.h">
+      <Filter>Header files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\LAN_Config.h">
+      <Filter>Header files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\Memory_Config.h">
+      <Filter>Header files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\Modbus_Config.h">
+      <Filter>Header files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\RGB_Config.h">
+      <Filter>Header files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\USB_Config.h">
+      <Filter>Header files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Driver\attributes.h">
+      <Filter>Header files\Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\beeper.h">
+      <Filter>Header files\Driver\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\crc.h">
+      <Filter>Header files\Driver\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\delay.h">
+      <Filter>Header files\Driver\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\dma.h">
+      <Filter>Header files\Driver\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\fifo.h">
+      <Filter>Header files\Driver\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\gpio.h">
+      <Filter>Header files\Driver\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\id.h">
+      <Filter>Header files\Driver\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\iwdg.h">
+      <Filter>Header files\Driver\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\led.h">
+      <Filter>Header files\Driver\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\pinname.h">
+      <Filter>Header files\Driver\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\pwm.h">
+      <Filter>Header files\Driver\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\spi.h">
+      <Filter>Header files\Driver\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\systime.h">
+      <Filter>Header files\Driver\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\timer.h">
+      <Filter>Header files\Driver\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\uart.h">
+      <Filter>Header files\Driver\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\utilities.h">
+      <Filter>Header files\Driver\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOSConfig.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Task\TaskMain.h">
+      <Filter>Header files\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\Audio\Audio.h">
+      <Filter>Header files\Library\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\Audio\HW\Buzzer.h">
+      <Filter>Header files\Library\Audio\HW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\Modbus\Modbus.h">
+      <Filter>Header files\Library\Modbus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\RGB\RGB.h">
+      <Filter>Header files\Library\RGB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\RGB\HW\WS2812.h">
+      <Filter>Header files\Library\RGB\HW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\Memory\Memory.h">
+      <Filter>Header files\Library\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\Memory\HW\W25QXX.h">
+      <Filter>Header files\Library\Memory\HW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\USB\USB.h">
+      <Filter>Header files\Library\USB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\USB\Class\CDC\usbd_cdc.h">
+      <Filter>Header files\Library\USB\Class\CDC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\USB\Core\usbd_core.h">
+      <Filter>Header files\Library\USB\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\USB\Core\usbd_ctlreq.h">
+      <Filter>Header files\Library\USB\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\USB\Core\usbd_def.h">
+      <Filter>Header files\Library\USB\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\USB\Core\usbd_ioreq.h">
+      <Filter>Header files\Library\USB\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="USB\usbd_conf.h">
+      <Filter>Header files\Library\USB\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="USB\usbd_desc.h">
+      <Filter>Header files\Library\USB\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalVariables.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\rng.h">
+      <Filter>Header files\Driver\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="Task\TaskCom.h">
+      <Filter>Header files\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\App\client_netconn.h">
+      <Filter>Header files\Library\LAN\App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\App\httpserver_netconn.h">
+      <Filter>Header files\Library\LAN\App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\App\sockets_stresstest.h">
+      <Filter>Header files\Library\LAN\App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\LAN\App\tcp_echoclient.h">
+      <Filter>Header files\Library\LAN\App</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\RTCC_Config.h">
+      <Filter>Header files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\RTCC\ConvertCalendar.h">
+      <Filter>Header files\Library\RTCC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\RTCC\RTCC.h">
+      <Filter>Header files\Library\RTCC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\RTCC\HW\DS1307.h">
+      <Filter>Header files\Library\RTCC\HW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\i2c.h">
+      <Filter>Header files\Driver\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\AD\AD.h">
+      <Filter>Header files\Library\AD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\AD\HW\AD7686.h">
+      <Filter>Header files\Library\AD\HW</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\AD_Config.h">
+      <Filter>Header files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Driver\HAL\adc.h">
+      <Filter>Header files\Driver\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleData_Pressure.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleData_Vibrtion.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleData_Proximity.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\General_Config.h">
+      <Filter>Header files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\HardwareProfile.h">
+      <Filter>Header files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\WiFi\WiFi.h">
+      <Filter>Header files\Library\WiFi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\WiFi\HW\ESP32.h">
+      <Filter>Header files\Library\WiFi\HW</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\WiFi_Config.h">
+      <Filter>Header files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\Channel_Config.h">
+      <Filter>Header files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\Sensor\Sensor.h">
+      <Filter>Header files\Library\Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\Sensor\SensorTypes.h">
+      <Filter>Header files\Library\Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\_Library\ARM\Library\Sensor\HW\SHT2x.h">
+      <Filter>Header files\Library\Sensor\HW</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\Sensor_Config.h">
+      <Filter>Header files\Config</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <LinkerScript Include="STM32H743VG_flash.lds">
+      <Filter>VisualGDB settings</Filter>
+    </LinkerScript>
+  </ItemGroup>
+</Project>
